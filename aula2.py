@@ -44,8 +44,8 @@ def ordem(lista, f):
 #Exercicio 4.10
 def filtrar_ordem(lista, f):
     elem = ordem(lista, f)
-    otherElems = [e for e in lista if e != elem]
-    return elem, otherElems
+    outrosElems = [e for e in lista if e != elem]
+    return elem, outrosElems
 
 #Exercicio 5.2
 def ordenar_seleccao(lista, ordem):
