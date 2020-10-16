@@ -49,4 +49,10 @@ def filtrar_ordem(lista, f):
 
 #Exercicio 5.2
 def ordenar_seleccao(lista, ordem):
-    pass
+    if lista == []:
+        return []
+    elem, outrosElems = filtrar_ordem(lista, ordem)
+    return [elem] + ordenar_seleccao(outrosElems, ordem)
+
+
+
